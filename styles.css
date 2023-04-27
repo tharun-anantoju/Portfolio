@@ -33,7 +33,7 @@ footer{
     width: 60%;
     border-radius: 50%;
     /* margin: 20% 30% 20% 20%; */
-    margin-top: 20%;
+    margin: 20% 0;
 }
 .name{
     color: #F2CD5C;
@@ -75,7 +75,7 @@ i{
 }
 .photo2{
     width: 50%;
-    margin:0 20% 0 0;
+    margin:0 20% 0 15%;
     border-radius: 5%;
 }
 .aboutTextName{
