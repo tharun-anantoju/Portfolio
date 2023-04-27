@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THARUN</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--bootstrap css-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script><!--bootstrap javascript-->
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/5e74e2ad22.js" crossorigin="anonymous"></script><!--favicon-->
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">THARUN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto menu">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ABOUT">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#SKILLS">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#CONTACT">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  <!--grid start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm gridOne">
+        <h1>Hi,</h1><br>
+        <h1>I'm <b class="name"><b>THARUN</b></b></h1><br>
+        <h1>Web Developer</h1><br>
+        <a href="Mrce_temp.pdf">
+          <button type="button" class="btn btn-warning btn-lg">Get My CV</button>
+        </a><br>
+        <a href="https://wa.me/917386060295"><i class="fa-brands fa-whatsapp "></i></a>
+        <a href="https://www.linkedin.com/in/tharunanantoju/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="tel:+91 7386060295"><i class="fa-solid fa-phone"></i></a>
+
+      </div>
+      <div class="col-sm gridTwo">
+        <img src="photo.jpg" alt="" class="photo">
+      </div>
+
+    </div>
+  </div>
+  <!-- grid end -->
+  <h1 class="about" id="ABOUT">ABOUT</h1>
+  <!-- about grid  -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="pass photos (1).jpg" class="photo2" alt="">
+      </div>
+      <div class="col-sm-9">
+        <div class="aboutTextName">I'm THARUN</div><br>
+        <div class="aboutText">
+          <p>My name is Tharun Anantoju, and I am a student at Malla Reddy College of Engineering. I have always been
+            passionate about technology and computers, which led me to pursue my intermediate education at Sri Chaitanya
+            Junior College, where I gained a solid foundation in science and mathematics. Prior to that, I completed my
+            schooling at Harvest Public School in Khammam, where I actively participated in various extracurricular
+            activities and developed a strong work ethic.</p>
+          <p>Currently, I am enrolled in the Electronics and Communication Engineering (ECE) department at Malla Reddy
+            College of Engineering, where I am honing my skills in areas such as circuit design, signal processing, and
+            communication systems. I am also actively involved in technical clubs and competitions, which has helped me
+            develop practical skills and gain exposure to the latest advancements in the field of ECE.</p>
+          <p>However, my true passion lies in web development. I have always been fascinated by the creative and dynamic
+            nature of web development, and I am determined to excel in this field. I have been actively learning
+            programming languages such as HTML, CSS, JavaScript, and frameworks like React, and I have gained hands-on
+            experience in building websites and web applications. I am constantly updating my skills and staying
+            up-to-date with the latest web development trends.</p>
+          <p>My long-term goal is to become a proficient web developer, working on innovative projects and creating
+            user-friendly and visually appealing websites that cater to the needs of clients and end-users alike. I am
+            excited about the endless possibilities and opportunities in the field of web development, and I am
+            committed to putting in the hard work and dedication required to achieve my goal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about grid end  -->
+  <h1 class="skills" id="SKILLS">SKILLS</h1>
+  <!-- skills grid -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="prof">Professional Skills</div>
+        <div class="aboutText">
+          <i class="fa-brands fa-html5 logos"></i>
+          <i class="fa-brands fa-css3 logos"></i>
+          <i class="fa-brands fa-js logos"></i><br>
+          <i class="fa-brands fa-python logos"></i>
+          <i class="fa-brands fa-java logos"></i>
+          <img src="c lang.png" class="C" alt="">
+        </div>
+      </div>
+      <div class="col-sm">
+        <img src="work.jpg" class="work" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- skills grid end  -->
+  <div class="skills" id="CONTACT">Contact</div>
+  <!-- email form start  -->
+  <form id="form" onclick="sendEmail()" method="POST">
+    <div class="form-group">
+      <input type="text" class="form-control" id="name" placeholder="Name" required>
+    </div><br>
+    <div class="form-group">
+      <input type="email" class="form-control" id="email" placeholder="Email adress" required>
+    </div><br>
+    <div class="form-group">
+      <textarea class="form-control" id="message" rows="5" placeholder="Share your thoughts with me"></textarea>
+    </div><br>
+    <button type="submit" class="btn btn-warning sub">Submit</button>
+  </form>
+  <!-- email form end  -->
+  <script src="https://smtpjs.com/v3/smtp.js"> </script>
+  <script>
+    function sendEmail() {
+      Email.send({
+        SecureToken: "43651254-8f65-44ac-a310-9fa2214e9b70",
+        To: 'tarunanantoju86@gmail.com',
+        From: "tarunanantoju86@gmail.com",
+        Subject: "Message from your protfolio",
+        Body: "Name : " + document.getElementById("name").value + "<br>Email : " + document.getElementById("email").value + "<br>Message : " + document.getElementById("message").value
+      }).then(
+        // message => alert("message sent")
+      );
+    }
+  </script>
+  <script>
+    document.getElementById("form").onsubmit = function () {
+      document.getElementById('load').style.display = "inline"
+    }
+  </script>
+</body>
+<footer>
+  <div class="fname">THARUN</div><br>
+  <a href="https://www.instagram.com/tarun_anantoju?r=nametag"><i class="fa-brands fa-instagram logo"></i></a>
+  <a href="https://github.com/tharun-anantoju"><i class="fa-brands fa-github logo"></i></a>
+  <a href="mailto:tarunanantoju86@gmail.com"><i class="fa-sharp fa-regular fa-envelope logo"></i></a><br>
+
+  <h6>© Copyright. All rigths reserved</h6>
+
+</footer>
+
+</html>
