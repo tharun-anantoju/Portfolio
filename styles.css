@@ -74,8 +74,8 @@ i{
     color: #F2CD5C;
 }
 .photo2{
-    width: 40%;
-    margin:0 20% 0 15%;
+    width: 60%;
+    margin:10% 30% 10% 10%;
     border-radius: 5%;
 }
 .aboutTextName{
@@ -119,7 +119,7 @@ i{
     transform: scale(1.1);
 }
 form{
-    margin: 0 30%;
+    margin: 0 25%;
 }
 .sub{
     margin-bottom: 5%;
