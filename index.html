@@ -107,7 +107,7 @@
   <!-- skills grid end  -->
   <div class="skills" id="CONTACT">Contact</div>
   <!-- email form start  -->
-  <form id="form" onclick="sendEmail()" method="POST">
+  <form id="form" onclick="sendEmail()" href="sent.html" method="POST">
     <div class="form-group">
       <input type="text" class="form-control" id="name" placeholder="Name" required>
     </div><br>
@@ -115,9 +115,14 @@
       <input type="email" class="form-control" id="email" placeholder="Email adress" required>
     </div><br>
     <div class="form-group">
+      <input type="tel" pattern="[0-9]{10}" class="form-control" id="mobile" placeholder="Contact" required>
+    </div><br>
+    <div class="form-group">
       <textarea class="form-control" id="message" rows="5" placeholder="Share your ideas with me"></textarea>
     </div><br>
-    <button type="submit" class="btn btn-warning sub">Submit</button>
+    
+    <button type="submit"  class="btn btn-warning sub"><a href="sent.html">Submit</a></button>
+    
   </form>
   <!-- email form end  -->
   <script src="https://smtpjs.com/v3/smtp.js"> </script>
@@ -128,10 +133,11 @@
         To: 'tarunanantoju86@gmail.com',
         From: "tarunanantoju86@gmail.com",
         Subject: "Message from your protfolio",
-        Body: "Name : " + document.getElementById("name").value + "<br>Email : " + document.getElementById("email").value + "<br>Message : " + document.getElementById("message").value
-      }).then(
-        // message => alert("message sent")
-      );
+        Body: "Name : " + document.getElementById("name").value + "<br>Email : " + document.getElementById("email").value +"<br>ContactNo:"+document.getElementById("mobile").value + "<br>Message : " +document.getElementById("message").value
+      })
+      // .then(
+      //   message => alert("message sent")
+      // );
     }
   </script>
   <script>
