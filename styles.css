@@ -146,3 +146,16 @@ a:hover{
 i:hover{
     transform: scale(1.2);
 }
+.sent{
+    text-align: center;
+    margin: 5%;
+    font-weight: bold;
+    color: #F2CD5C;
+
+}
+.btn-sent{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
